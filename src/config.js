@@ -1,99 +1,150 @@
 // src/config.js
 
 export const CONFIG = {
-  // Novios
-  groom: "Endir Alvillar",
-  bride: "Fiorella Vega de Florio",
-  weddingDateFormatted: "08.08.2026",
-  weddingYear: "2026",
-  weddingMonthName: "AGOSTO",
-  weddingDayName: "SÁBADO",
-  weddingDayNumber: 8,
-  
-  // Cuenta regresiva: Año, Mes (0-indexed, 7 = Agosto), Día, Hora, Minutos
-  countdownTargetDate: new Date(2026, 7, 8, 21, 0, 0), // 8 de Agosto, 2026 a las 8:00 PM
+  // Padres y Bebé
+  parents: {
+    dad: "Alberth",
+    mom: "Ammi",
+    babyName: "Hermoso Angelito",
+  },
 
-  // Música de fondo (debe ser una URL directa a un archivo de audio como .mp3)
-  // Ubicado en la carpeta /public
-  musicUrl: "/camilo.mp3",
-  songTitle: "una canción de amor para la pulga - Camilo",
-  
-  // Evento Unificado: Boda Civil & Gender Reveal
+  // Evento
   event: {
-    title: "Nuestra Boda Civil & Gender Reveal",
-    time: "8:00 pm",
-    locationName: "Calle 70 entre Av 16 y Av 16A",
-    phrase: "Queremos que seas parte de este gran momento para nosotros",
-    mapLink: "https://maps.app.goo.gl/uNrfEcEH3wfiZ9ex7?g_st=iw", // Dejar vacío si no hay link directo
+    title: "¿Niño o Niña?",
+    subtitle: "Nuestra Revelación de Género",
+    fullDate: "Sábado, 17 de Octubre de 2026",
+    dateFormatted: "17.10.2026",
+    day: 17,
+    monthName: "OCTUBRE",
+    year: 2026,
+    time: "4:00 PM", // Hora habitual para granjas familiares
+    locationName: "Granja Pa' que Hugo",
+    locationCity: "Maracaibo, Zulia",
+    mapLink: "https://www.google.com/maps/place/Pa'+q+Hugo,+Maracaibo+4001,+Zulia/data=!4m2!3m1!1s0x8e899b55494cf00b:0xc1b3d195cacae59",
+    whatsappPhone: "584124726621", // Reemplazar con el número de WhatsApp para confirmar
   },
 
-  // Dinámica de regalos para el Gender Reveal según la sospecha
-  genderRevealRules: {
-    girlGift: "trae: toallitas húmedas",
-    boyGift: "trae: pañales",
+  // Paleta de colores oficial (Exclusivamente Neutros Elegantes)
+  palette: {
+    beige: "#EADBCE",
+    beigeLight: "#F5EFEB",
+    brown: "#6B4423",
+    brownDark: "#4A2E18",
+    white: "#FFFFFF",
+    cream: "#FAF8F5",
+    gold: "#D4AF37",
+    goldGradient: "linear-gradient(135deg, #ECC875 0%, #D4AF37 50%, #B8860B 100%)",
   },
 
-  // Código de vestimenta
+  // Código de vestimenta solicitado
   dressCode: {
-    style: "Coctel",
-    description: "Les pedimos de corazón evitar vestir con los colores blanco, negro y gris, o tonos similares.",
-    photos: [
-      "/dress1.png",
-      "/suit1.png",
-      "/dress2.png",
-      "/suit2.png",
-      "/dress3.jpg",
-      "/suit3.png"
+    title: "Código de Vestimenta",
+    colorsText: "Colores Neutros: Beige, Marrón y Blanco",
+    description: "Les agradecemos asistir con prendas en tonos neutros y cálidos para armonizar con nuestra temática.",
+    swatches: [
+      { name: "Blanco Marfil", color: "#FFFFFF", border: "#E2D9CC" },
+      { name: "Beige Suave", color: "#EADBCE" },
+      { name: "Arena Cálido", color: "#D1BCA8" },
+      { name: "Marrón Claro", color: "#A47E5B" },
+      { name: "Marrón Chocolate", color: "#5C3A21" },
     ]
   },
 
-  // Regalos
-  gifts: {
-    enabled: true,
-    phrase: "El mejor regalo es tu presencia, pero si deseas tener un detalle con nosotros, les dejamos las siguientes opciones:",
-    pagoMovil: {
-      banco: "Banesco",
-      nombre: "Endir Alvillar",
-      ci: "20.206.339",
-      telefono: "04124726621"
+  // Dinámica de regalos para el Gender Reveal
+  giftDynamics: {
+    title: "Dinámica de Regalos",
+    subtitle: "¿Cuál es tu predicción?",
+    girl: {
+      team: "Team Niña 🎀",
+      gift: "Pañales",
+      description: "Si crees que es una linda princesita",
+      icon: "heart"
     },
-    zelle: {
-      nombre: "Fioreanna Vega",
-      telefono: "(346) 843-4060"
-    },
-    binance: {
-      correo: "endiralvillar@gmail.com",
-      usuario: "Endir Alvillar"
+    boy: {
+      team: "Team Niño 🧸",
+      gift: "Kit de higiene o Toallitas húmedas",
+      description: "Si crees que es un pequeño campeón",
+      icon: "smile"
     }
   },
 
-  // Confirmación
-  confirmation: {
-    deadlineDate: "01 de agosto de 2026",
-    // childrenPolicy: "SIN NIÑOS",
-    // childrenDescription: "Un evento para adultos está en camino. ¡Así que prepárense para una noche llena de diversión! Dejemos a los niños en casa esta vez.",
-    recommendations: "Ser puntual.",
-    thankYouMessage: "¡Muchas Gracias!",
+  // Canción de cuna (Música de fondo)
+  music: {
+    url: "/lullaby.wav",
+    title: "Canción de Cuna (Brahms' Lullaby - Music Box)",
   },
 
-  // Stein HQ API Integraciones
-  steinApiUrl: "https://api.steinhq.com/v1/storages/6a4d5c1a92b1163e97174745", 
-  
-  // Nueva API de Stein HQ para consultar pases de invitados (solo lectura)
-  steinReadGuestsApiUrl: "https://api.steinhq.com/v1/storages/6a516c6f92b1163e971942da",
-  
-  // Nombre de la hoja de Google Sheets en Stein HQ
-  steinRsvpSheet: "Hoja 1",
-  steinVotesSheet: "Hoja 1",
-  steinGuestsSheet: "Invitados", // Nombre de la pestaña de la base de datos de invitados
-
-  // Lista de invitados simulados/pruebas (Desarrollo y Fallback)
-  mockGuests: [
-    { nombre: "Oscar Bueno", cedula: "20206339", pases: 4 },
-    { nombre: "Juan Pérez", cedula: "123456", pases: 2 },
-    { nombre: "María Gómez", cedula: "789012", pases: 3 },
-    { nombre: "Camilo Echeverry", cedula: "999999", pases: 1 },
-    { nombre: "Endir Alvillar", cedula: "888888", pases: 2 },
-    { nombre: "Fiorella Vega", cedula: "777777", pases: 2 }
-  ],
+  // Diapositivas tipo Video / Story (8 escenas completas del video)
+  storyScenes: [
+    {
+      id: "intro",
+      duration: 5500,
+      title: "¿Niño ? Niña",
+      subtitle: "Un secreto que está por revelarse...",
+      image: "/teddy_intro.jpg",
+      badge: "Revelación de Género"
+    },
+    {
+      id: "message",
+      duration: 6500,
+      badge: "Boy 🧸 Girl",
+      title: "ESTAMOS MUY ANSIOSOS POR SABER EL GÉNERO DE NUESTRO BEBÉ Y QUEREMOS QUE NOS ACOMPAÑES EN ESTE HERMOSO MOMENTO",
+      image: "/baby_shoes.jpg"
+    },
+    {
+      id: "girl-team",
+      duration: 5000,
+      title: "Muchos quieren",
+      subtitle: "Que sea",
+      highlight: "Niña!",
+      image: "/teddy_sleeping.jpg",
+      badge: "¿Team Niña?"
+    },
+    {
+      id: "boy-team",
+      duration: 5000,
+      title: "Y otros que",
+      highlight: "Sea un niño",
+      image: "/teddy_intro.jpg",
+      badge: "¿Team Niño?"
+    },
+    {
+      id: "angelito",
+      duration: 6500,
+      title: "Hermoso Angelito",
+      parents: "Ammi & Alberth",
+      text: "Estoy muy feliz que sean Mis papitos",
+      subtext: "🤎 ? 💛",
+      image: "/angelito_ultrasound.jpg",
+      badge: "El Milagro Más Grande"
+    },
+    {
+      id: "gifts-team",
+      duration: 7000,
+      title: "Dinámica de Regalos",
+      image: "/clouds_bg.jpg",
+      badge: "¿Cuál es tu predicción?"
+    },
+    {
+      id: "event-details",
+      duration: 7500,
+      title: "Fecha & Ubicación",
+      date: "Sábado, 17 de Octubre de 2026",
+      time: "4:00 PM",
+      place: "Granja Pa' que Hugo",
+      city: "Maracaibo, Zulia",
+      image: "/teddy_sleeping.jpg",
+      badge: "Lugar del Evento"
+    },
+    {
+      id: "rsvp-final",
+      duration: 15000,
+      title: "Confirma tu asistencia",
+      bottomText1: "Te esperamos",
+      bottomText2: "No faltes",
+      isFinalInteractive: true,
+      image: "/clouds_bg.jpg",
+      badge: "Confirmación"
+    }
+  ]
 };
