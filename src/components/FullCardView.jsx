@@ -8,7 +8,7 @@ import { CONFIG } from '../config';
 
 export default function FullCardView({ onSwitchToStoryMode }) {
   const whatsappUrl = `https://wa.me/${CONFIG.event.whatsappPhone}?text=${encodeURIComponent(
-    `¡Hola Ammi y Alberth! 🤎 Confirmo con mucho amor mi asistencia a la revelación de género de su Hermoso Angelito este 17 de Octubre en Granja Pa' que Hugo. ¡Nos vemos allá! ✨`
+    `¡Hola Ammi y Alberth! 🤎 Confirmo con mucho amor mi asistencia a la revelación de género de su bebé este 17 de Octubre en Granja Pa' que Hugo. ¡Nos vemos allá! ✨`
   )}`;
 
   return (
@@ -53,23 +53,23 @@ export default function FullCardView({ onSwitchToStoryMode }) {
         </p>
       </header>
 
-      {/* 2. Sección Angelito / Ecografía */}
+      {/* 2. Sección Ecografía / La Dulce Espera */}
       <section className="card-section angelito-card-section">
         <div className="section-badge">El Milagro Más Grande</div>
-        <h2 className="section-title">Hermoso Angelito</h2>
+        <h2 className="section-title">La Dulce Espera</h2>
         
         <div className="ultrasound-showcase">
           <img 
             src="/angelito_ultrasound.jpg" 
-            alt="Ecografía angelito con marco dorado" 
+            alt="Ecografía con marco dorado" 
             className="ultrasound-display-img" 
           />
         </div>
 
         <p className="angelito-card-caption">
-          "Estoy muy feliz de que ustedes sean mis papitos..."
+          "Estoy muy feliz que sean Mis papitos y Angelito mi hermanito"
           <br />
-          <span className="angelito-caption-names">— {CONFIG.parents.mom} & {CONFIG.parents.dad} 🤎✨</span>
+          <span className="angelito-caption-names">— {CONFIG.parents.mom}, {CONFIG.parents.dad} y Angelito 🤎✨</span>
         </p>
       </section>
 
@@ -158,13 +158,13 @@ export default function FullCardView({ onSwitchToStoryMode }) {
             </div>
           </div>
 
-          {/* Opción Niño */}
+          {/* Opción Niño / Varón */}
           <div className="gift-option-card boy-card">
-            <div className="gift-badge-team">Team Niño 🧸</div>
+            <div className="gift-badge-team">Team Varón 🧸</div>
             <div className="gift-image-thumb">
-              <img src="/teddy_sleeping.jpg" alt="Team Niño" />
+              <img src="/teddy_sleeping.jpg" alt="Team Varón" />
             </div>
-            <h3 className="gift-team-title">Si crees que es Niño:</h3>
+            <h3 className="gift-team-title">Si es Varón:</h3>
             <div className="gift-highlight-pill">
               <Gift size={16} />
               <strong>{CONFIG.giftDynamics.boy.gift}</strong>

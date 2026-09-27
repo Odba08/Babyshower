@@ -1,11 +1,12 @@
 // src/config.js
 
 export const CONFIG = {
-  // Padres y Bebé
+  // Padres, Hermanito y Bebé
   parents: {
     dad: "Alberth",
     mom: "Ammi",
-    babyName: "Hermoso Angelito",
+    brother: "Angelito",
+    babyTitle: "Nuestro Bebé",
   },
 
   // Evento
@@ -21,7 +22,8 @@ export const CONFIG = {
     locationName: "Granja Pa' que Hugo",
     locationCity: "Maracaibo, Zulia",
     mapLink: "https://www.google.com/maps/place/Pa'+q+Hugo,+Maracaibo+4001,+Zulia/data=!4m2!3m1!1s0x8e899b55494cf00b:0xc1b3d195cacae59",
-    whatsappPhone: "584124726621", // Reemplazar con el número de WhatsApp para confirmar
+    whatsappPhone: "584246622342", // +58 424-6622342
+    whatsappPhoneFormatted: "+58 424-6622342",
   },
 
   // Paleta de colores oficial (Exclusivamente Neutros Elegantes)
@@ -56,22 +58,24 @@ export const CONFIG = {
     subtitle: "¿Cuál es tu predicción?",
     girl: {
       team: "Team Niña 🎀",
-      gift: "Pañales",
-      description: "Si crees que es una linda princesita",
+      gift: "Toallitas húmedas",
+      description: "Si crees que es niña trae toallitas",
       icon: "heart"
     },
     boy: {
-      team: "Team Niño 🧸",
-      gift: "Kit de higiene o Toallitas húmedas",
-      description: "Si crees que es un pequeño campeón",
+      team: "Team Varón / Niño 🧸",
+      gift: "Pañales",
+      description: "Si es varón trae pañales",
       icon: "smile"
     }
   },
 
   // Canción de cuna (Música de fondo)
   music: {
-    url: "/lullaby.wav",
-    title: "Canción de Cuna (Brahms' Lullaby - Music Box)",
+    url: "/song.m4a",
+    title: "Twinkle Twinkle Little Star (Grand Piano Version)",
+    artist: "Piano Version",
+    youtubeUrl: "https://www.youtube.com/watch?v=FN-0RMxP2YU",
   },
 
   // Diapositivas tipo Video / Story (8 escenas completas del video)
@@ -111,9 +115,10 @@ export const CONFIG = {
     {
       id: "angelito",
       duration: 6500,
-      title: "Hermoso Angelito",
+      title: "La Dulce Espera",
       parents: "Ammi & Alberth",
-      text: "Estoy muy feliz que sean Mis papitos",
+      brother: "Angelito",
+      text: "Estoy muy feliz que sean Mis papitos y Angelito mi hermanito",
       subtext: "🤎 ? 💛",
       image: "/angelito_ultrasound.jpg",
       badge: "El Milagro Más Grande"

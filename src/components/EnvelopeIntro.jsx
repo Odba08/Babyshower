@@ -44,7 +44,7 @@ export default function EnvelopeIntro({ onOpen }) {
 
         <p className="envelope-subtitle">
           Te invitamos a ser parte del momento más emocionante de nuestras vidas: descubrir el género de nuestro
-          <span className="highlight-angelito"> Hermoso Angelito 🤎</span>
+          <span className="highlight-angelito"> nuevo bebé 🤎</span>
         </p>
 
         <button 

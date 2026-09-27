@@ -53,13 +53,16 @@ export default function App() {
 
   return (
     <main className="main-viewport">
-      {/* Elemento de Audio nativo para la canción de cuna */}
+      {/* Elemento de Audio nativo para la canción */}
       <audio 
         ref={audioRef} 
         src={CONFIG.music.url} 
         loop 
         preload="auto"
-      />
+      >
+        <source src={CONFIG.music.url} type="audio/mp4" />
+        <source src="/song.mp4" type="video/mp4" />
+      </audio>
 
       {/* Partículas de destellos dorados en el fondo */}
       <div className="ambient-sparkles-container" aria-hidden="true">

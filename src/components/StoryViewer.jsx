@@ -108,7 +108,7 @@ export default function StoryViewer({
 
   // Mensaje pre-armado de WhatsApp
   const whatsappUrl = `https://wa.me/${CONFIG.event.whatsappPhone}?text=${encodeURIComponent(
-    `¡Hola Ammi y Alberth! 🤎 Confirmo con mucho amor mi asistencia a la revelación de género de su Hermoso Angelito este 17 de Octubre en Granja Pa' que Hugo. ¡Nos vemos allá! ✨`
+    `¡Hola Ammi y Alberth! 🤎 Confirmo con mucho amor mi asistencia a la revelación de género de su bebé este 17 de Octubre en Granja Pa' que Hugo. ¡Nos vemos allá! ✨`
   )}`;
 
   return (
@@ -261,15 +261,16 @@ export default function StoryViewer({
             </div>
           )}
 
-          {/* Escena 6: Dinámica de Regalos (Exacta de la imagen de Francis) */}
+          {/* Escena 6: Dinámica de Regalos (Exacta de la imagen) */}
           {currentScene.id === 'gifts-team' && (
             <div className="scene-content gifts-exact-scene">
               <span className="scene-tag">Dinámica de Regalos</span>
 
               <div className="gift-group-block">
-                <p className="gift-team-intro">Si eres team</p>
+                <p className="gift-team-intro">Si crees que es</p>
                 <h2 className="bubble-exact-nina">NIÑA</h2>
-                <p className="gift-instruction-bold">Trae pañales</p>
+                <p className="gift-instruction-bold">Trae toallitas</p>
+                <p className="gift-instruction-sub">húmedas 🎀</p>
               </div>
 
               <div className="gift-exact-divider">
@@ -277,10 +278,10 @@ export default function StoryViewer({
               </div>
 
               <div className="gift-group-block">
-                <p className="gift-team-intro">Si eres team</p>
-                <h2 className="bubble-exact-nino">NIÑO</h2>
-                <p className="gift-instruction-bold">Trae kit de aseo</p>
-                <p className="gift-instruction-sub">Para bebé</p>
+                <p className="gift-team-intro">Si es</p>
+                <h2 className="bubble-exact-nino">VARÓN</h2>
+                <p className="gift-instruction-bold">Trae pañales</p>
+                <p className="gift-instruction-sub">para bebé 🧸</p>
               </div>
             </div>
           )}
