@@ -269,8 +269,8 @@ export default function StoryViewer({
               <div className="gift-group-block">
                 <p className="gift-team-intro">Si crees que es</p>
                 <h2 className="bubble-exact-nina">NIÑA</h2>
-                <p className="gift-instruction-bold">Trae toallitas</p>
-                <p className="gift-instruction-sub">húmedas 🎀</p>
+                <p className="gift-instruction-bold">Puedes traer</p>
+                <p className="gift-instruction-sub">pañales 🎀</p>
               </div>
 
               <div className="gift-exact-divider">
@@ -278,10 +278,10 @@ export default function StoryViewer({
               </div>
 
               <div className="gift-group-block">
-                <p className="gift-team-intro">Si es</p>
-                <h2 className="bubble-exact-nino">VARÓN</h2>
-                <p className="gift-instruction-bold">Trae pañales</p>
-                <p className="gift-instruction-sub">para bebé 🧸</p>
+                <p className="gift-team-intro">Si crees que es</p>
+                <h2 className="bubble-exact-nino">NIÑO</h2>
+                <p className="gift-instruction-bold">Kit de higiene</p>
+                <p className="gift-instruction-sub">o toallitas húmedas 🧸</p>
               </div>
             </div>
           )}

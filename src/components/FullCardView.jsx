@@ -158,13 +158,13 @@ export default function FullCardView({ onSwitchToStoryMode }) {
             </div>
           </div>
 
-          {/* Opción Niño / Varón */}
+          {/* Opción Niño */}
           <div className="gift-option-card boy-card">
-            <div className="gift-badge-team">Team Varón 🧸</div>
+            <div className="gift-badge-team">Team Niño 🧸</div>
             <div className="gift-image-thumb">
-              <img src="/teddy_sleeping.jpg" alt="Team Varón" />
+              <img src="/teddy_sleeping.jpg" alt="Team Niño" />
             </div>
-            <h3 className="gift-team-title">Si es Varón:</h3>
+            <h3 className="gift-team-title">Si crees que es Niño:</h3>
             <div className="gift-highlight-pill">
               <Gift size={16} />
               <strong>{CONFIG.giftDynamics.boy.gift}</strong>

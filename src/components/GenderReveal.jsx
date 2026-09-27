@@ -79,10 +79,10 @@ export default function GenderReveal({ selectedGender, setSelectedGender }) {
           🎁 Detalle según tu voto:
         </p>
         <p style={{ margin: "6px 0", display: "flex", alignItems: "flex-start", gap: "8px" }}>
-          <span>💗</span> <span>Si crees que es <strong>niña</strong> trae: <strong>toallitas húmedas</strong></span>
+          <span>💗</span> <span>Si crees que es <strong>niña</strong> puedes traer: <strong>pañales</strong></span>
         </p>
         <p style={{ margin: "6px 0", display: "flex", alignItems: "flex-start", gap: "8px" }}>
-          <span>💙</span> <span>Si crees que es <strong>niño</strong> trae: <strong>pañales</strong></span>
+          <span>💙</span> <span>Si crees que es <strong>niño</strong> puedes traer: <strong>kit de higiene o toallitas húmedas</strong></span>
         </p>
       </div>
 

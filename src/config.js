@@ -58,14 +58,14 @@ export const CONFIG = {
     subtitle: "¿Cuál es tu predicción?",
     girl: {
       team: "Team Niña 🎀",
-      gift: "Toallitas húmedas",
-      description: "Si crees que es niña trae toallitas",
+      gift: "Pañales",
+      description: "Si crees que es niña puedes traer pañales",
       icon: "heart"
     },
     boy: {
-      team: "Team Varón / Niño 🧸",
-      gift: "Pañales",
-      description: "Si es varón trae pañales",
+      team: "Team Niño 🧸",
+      gift: "Kit de higiene o toallitas húmedas",
+      description: "Si crees que es niño puedes traer kit de higiene o toallitas húmedas",
       icon: "smile"
     }
   },
