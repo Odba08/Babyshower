@@ -108,7 +108,7 @@ export default function StoryViewer({
 
   // Mensaje pre-armado de WhatsApp
   const whatsappUrl = `https://wa.me/${CONFIG.event.whatsappPhone}?text=${encodeURIComponent(
-    `¡Hola Ammi y Alberth! 🤎 Confirmo con mucho amor mi asistencia a la revelación de género de su bebé este 17 de Octubre en Granja Pa' que Hugo. ¡Nos vemos allá! ✨`
+    `¡Hola Ammi y Alberth! 🤎 Confirmo con mucho amor mi asistencia a la revelación de género de su bebé este 18 de Octubre en Granja Pa' que Hugo. ¡Nos vemos allá! ✨`
   )}`;
 
   return (
