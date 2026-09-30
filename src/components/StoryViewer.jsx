@@ -295,7 +295,7 @@ export default function StoryViewer({
 
               <div className="event-date-card">
                 <Calendar size={18} className="gold-icon" />
-                <strong>{CONFIG.event.fullDate}</strong>
+                <strong>{CONFIG.event.fullDate} • {CONFIG.event.time}</strong>
               </div>
 
               {/* Botón de Google Maps para Pa' que Hugo */}

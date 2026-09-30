@@ -86,7 +86,7 @@ export default function FullCardView({ onSwitchToStoryMode }) {
             </div>
             <span className="info-label">DÍA DEL EVENTO</span>
             <strong className="info-main-text">{CONFIG.event.fullDate}</strong>
-            <span className="info-sub-text">4:00 PM</span>
+            <span className="info-sub-text">{CONFIG.event.time}</span>
           </div>
 
           {/* Tarjeta de Lugar */}

@@ -18,13 +18,14 @@ export const CONFIG = {
     day: 17,
     monthName: "OCTUBRE",
     year: 2026,
-    time: "4:00 PM", // Hora habitual para granjas familiares
+    time: "10:00 AM", // 10:00 de la mañana
     locationName: "Granja Pa' que Hugo",
     locationCity: "Maracaibo, Zulia",
     mapLink: "https://www.google.com/maps/place/Pa'+q+Hugo,+Maracaibo+4001,+Zulia/data=!4m2!3m1!1s0x8e899b55494cf00b:0xc1b3d195cacae59",
     whatsappPhone: "584246622342", // +58 424-6622342
     whatsappPhoneFormatted: "+58 424-6622342",
   },
+  countdownTargetDate: new Date("2026-10-18T10:00:00"),
 
   // Paleta de colores oficial (Exclusivamente Neutros Elegantes)
   palette: {
@@ -135,7 +136,7 @@ export const CONFIG = {
       duration: 7500,
       title: "Fecha & Ubicación",
       date: "Domingo, 18 de Octubre de 2026",
-      time: "4:00 PM",
+      time: "10:00 AM",
       place: "Granja Pa' que Hugo",
       city: "Maracaibo, Zulia",
       image: "/teddy_sleeping.jpg",
