@@ -13,7 +13,7 @@ export const CONFIG = {
   event: {
     title: "¿Niño o Niña?",
     subtitle: "Nuestra Revelación de Género",
-    fullDate: "Sábado, 18 de Octubre de 2026",
+    fullDate: "Domingo, 18 de Octubre de 2026",
     dateFormatted: "17.10.2026",
     day: 17,
     monthName: "OCTUBRE",
@@ -134,7 +134,7 @@ export const CONFIG = {
       id: "event-details",
       duration: 7500,
       title: "Fecha & Ubicación",
-      date: "Sábado, 18 de Octubre de 2026",
+      date: "Domingo, 18 de Octubre de 2026",
       time: "4:00 PM",
       place: "Granja Pa' que Hugo",
       city: "Maracaibo, Zulia",
